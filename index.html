@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Small Business - Home Page</title>
+    <!-- Font Awesome for Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <!-- External CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Welcome to Our Food Photography Business</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Capturing Your Special Moments</h2>
+            <p>Professional Photography Services for Every Occasion</p>
+            <button onclick="showAlert('Home')">Learn More</button>
+        </div>
+    </section>
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+        <h2>Our Portfolio</h2>
+        <div class="portfolio-gallery">
+            <!-- Add images of your photography work here -->
+            <img src="Main index/food-photography-on-the-go-tips.jpg" alt="Photo 1" class="portfolio-item">
+            <img src="Main index/get-inspired-food-photography-tips-4-1920x1080-f9288d38-d5f8-11ea-9618-f8bc127793a9.jpeg" alt="Photo 2" class="portfolio-item">
+            <img src="Main index/istockphoto-1457433817-612x612.jpg" alt="Photo 3" class="portfolio-item">
+            <img src="Main index/photo-1532980400857-e8d9d275d858.jpeg" alt="Photo 4" class="portfolio-item">
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing">
+        <h2>Our Pricing</h2>
+        <div class="pricing-table">
+            <div class="pricing-option">
+                <h3>Basic Package</h3>
+                <p>Includes 2 hours of shooting, 50 edited photos.</p>
+                <p><strong>$200</strong></p>
+            </div>
+            <div class="pricing-option">
+                <h3>Standard Package</h3>
+                <p>Includes 4 hours of shooting, 100 edited photos, album included.</p>
+                <p><strong>$400</strong></p>
+            </div>
+            <div class="pricing-option">
+                <h3>Premium Package</h3>
+                <p>Full-day shoot, 200 edited photos, custom photo book, and video.</p>
+                <p><strong>$800</strong></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials">
+        <h2>What Our Clients Say</h2>
+        <div class="testimonial">
+            <p>"The photos were amazing! We couldn't be happier with the results." - <strong>Jane & John Doe</strong></p>
+        </div>
+        <div class="testimonial">
+            <p>"Professional and friendly, they made our special day even more unforgettable." - <strong>Mary & Adam</strong></p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Have a question or want to book a session? Get in touch with us!</p>
+        <!-- Contact form here -->
+    </section>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" onclick="scrollToTop()">↑</button>
+
+    <!-- Footer Section -->
+    <footer>
+        <h2>Follow Us</h2>
+        <a href="https://facebook.com" target="_blank" class="facebook-link">
+            <i class="fab fa-facebook"></i> Facebook
+        </a>
+        <a href="https://instagram.com" target="_blank" class="instagram-link">
+            <i class="fab fa-instagram"></i> Instagram
+        </a>
+        <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+        <button onclick="showRandomQuote()">Show Random Quote</button>
+    </footer>
+
+    <!-- External JavaScript -->
+    <script src="scripts.js"></script>
+</body>
+
+</html>

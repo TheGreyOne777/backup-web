@@ -1,0 +1,172 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('Background img/pexels-pixabay-248519.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #ffffff;
+}
+
+
+/* Header and Footer */
+header {
+    background-color: rgb(0, 0, 0); /* Semi-transparent dark background */
+    color: #ffffff;
+    text-align: center;  
+}
+
+footer {
+    background-color: rgba(255, 255, 255, 0); /* Semi-transparent dark background */
+    color: #ffffff;
+    text-align: center;
+    padding: 1em 0;
+}
+
+/* Specific styles for the Facebook and Instagram icons */
+.facebook-link i {
+    color: #4267B2; /* Facebook Blue */
+}
+
+.instagram-link i {
+    color: #E1306C; /* Instagram Pink/Red */
+}
+
+/* General link styling */
+footer a {
+    text-decoration: none;
+    font-size: 16px;
+    color: inherit; /* Ensures text inherits color from the link */
+    margin-right: 20px;
+    display: inline-flex;
+    align-items: center;
+}
+
+footer a i {
+    margin-right: 8px; /* Adds spacing between icon and text */
+    font-size: 24px;
+}
+
+footer a:hover i {
+    opacity: 0.8; /* Slight opacity on hover for effect */
+}
+
+
+
+/* Navigation Bar */
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Sections */
+section {
+    padding: 2em;
+    text-align: center;
+}
+
+/* Contact Details */
+.contact-details {
+    margin-bottom: 20px;
+}
+
+.contact-details p {
+    margin: 5px 0;
+}
+
+/* Contact Form */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form label {
+    margin: 10px 0 5px;
+}
+
+form input, form textarea {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+form button:hover {
+    background-color: #ffffff;
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+/* Responsive Design */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav ul li {
+        margin: 10px 0;
+    }
+}
+/* Portfolio Section */
+#portfolio {
+    padding: 40px;
+    text-align: center;
+}
+
+.portfolio-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.portfolio-item {
+    width: 100%; /* Makes the image fill the available width */
+    max-width: 250px; /* Ensures the image doesn't get too large */
+    height: auto; /* Maintains aspect ratio */
+    object-fit: cover; /* Ensures the image fits within the box without stretching */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.portfolio-item:hover {
+    transform: scale(1.05); /* Adds a zoom-in effect on hover */
+}
+
+@media screen and (max-width: 768px) {
+    .portfolio-item {
+        max-width: 100%; /* Make images take up full width on smaller screens */
+    }
+}
